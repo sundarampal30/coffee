@@ -1,0 +1,292 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Cafe</title>
+
+    <!-- Boxicons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= LOGIN FORM ================= -->
+
+    <div class="form-box login">
+
+        <form action="login.php" method="POST">
+
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required>
+
+                <i class="bx bxs-user"></i>
+            </div>
+
+
+            <div class="input-box">
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+                <i class="bx bxs-lock-alt"></i>
+
+            </div>
+
+
+            <div class="forget-password">
+
+                <a href="forgot-password.html">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button type="submit" class="button">
+                Login
+            </button>
+
+
+            <p>
+                Don't have an account?
+
+                <a href="#" class="register-link">
+                    Signup
+                </a>
+            </p>
+
+
+            <!-- SOCIAL LOGIN -->
+
+            <div class="social-login">
+
+                <p>Or Login With</p>
+
+                <div class="social-icons">
+
+                    <!-- GOOGLE -->
+                    <a
+                        href="https://accounts.google.com/">
+                        <i class="bx bxl-google"></i>
+                        Google
+                    </a>
+
+
+                    <!-- GITHUB -->
+                    <a
+                        href="https://github.com/login">
+                        <i class="bx bxl-github"></i>
+                        GitHub
+                    </a>
+
+
+                    <!-- FACEBOOK -->
+                    <a
+                        href="https://www.facebook.com/login/">
+                        <i class="bx bxl-facebook"></i>
+                        Facebook
+                    </a>
+
+
+                    <!-- EMAIL -->
+                    <a href="mailto:">
+                        <i class="bx bx-envelope"></i>
+                        Email
+                    </a>
+
+
+                    <!-- MOBILE -->
+                    <a href="tel:">
+                        <i class="bx bx-phone"></i>
+                        Mobile
+                    </a>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= REGISTER FORM ================= -->
+
+    <div class="form-box register">
+
+        <form action="register.php" method="POST">
+
+            <h1>Register</h1>
+
+
+            <div class="input-box">
+
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required>
+
+                <i class="bx bxs-user"></i>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required>
+
+                <i class="bx bx-envelope"></i>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+                <i class="bx bxs-lock-alt"></i>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <input
+                    type="password"
+                    name="confirm_password"
+                    placeholder="Confirm Password"
+                    required>
+
+                <i class="bx bxs-lock-alt"></i>
+
+            </div>
+
+
+            <button type="submit" class="button">
+                Register
+            </button>
+
+
+            <p>
+
+                Already have an account?
+
+                <a href="#" class="login-link">
+                    Login
+                </a>
+
+            </p>
+
+
+            <!-- SOCIAL REGISTER -->
+
+            <div class="social-login">
+
+                <p>Or Register With</p>
+
+                <div class="social-icons">
+
+                    <a href="https://accounts.google.com/">
+                        <i class="bx bxl-google"></i>
+                        Google
+                    </a>
+
+                    <a href="https://github.com/login">
+                        <i class="bx bxl-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="mailto:">
+                        <i class="bx bx-envelope"></i>
+                        Email
+                    </a>
+
+                    <a href="tel:">
+                        <i class="bx bx-phone"></i>
+                        Mobile
+                    </a>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= TOGGLE BOX ================= -->
+
+    <div class="toggle-box">
+
+        <div class="toggle-panel toggle-left">
+
+            <h1>Hello, Welcome!</h1>
+
+            <p>
+                Don't have an account?
+            </p>
+
+            <button class="button register-link">
+                Signup
+            </button>
+
+        </div>
+
+
+        <div class="toggle-panel toggle-right">
+
+            <h1>Welcome Back!</h1>
+
+            <p>
+                Already have an account?
+            </p>
+
+            <button class="button login-link">
+                Login
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```

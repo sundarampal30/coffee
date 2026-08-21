@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Cafe - Order</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">☕ Coffee Cafe</div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1>Welcome to Coffee Cafe ☕</h1>
+    <p>Fresh Coffee, Great Taste and Happy Moments.</p>
+</section>
+
+
+<section class="menu" id="menu">
+
+    <h2>☕ Choose Your Coffee</h2>
+    <p>Select your favorite coffee and place your order.</p>
+
+    <div class="coffee-list">
+
+        <div class="coffee-card">
+            <span>☕</span>
+            <h3>Cappuccino</h3>
+            <p>Rich and creamy coffee.</p>
+            <strong>₹120</strong>
+
+            <button onclick="selectCoffee('Cappuccino', 120)">
+                Choose
+            </button>
+        </div>
+
+
+        <div class="coffee-card">
+            <span>☕</span>
+            <h3>Espresso</h3>
+            <p>Strong and delicious coffee.</p>
+            <strong>₹100</strong>
+
+            <button onclick="selectCoffee('Espresso', 100)">
+                Choose
+            </button>
+        </div>
+
+
+        <div class="coffee-card">
+            <span>☕</span>
+            <h3>Latte</h3>
+            <p>Smooth and creamy latte.</p>
+            <strong>₹150</strong>
+
+            <button onclick="selectCoffee('Latte', 150)">
+                Choose
+            </button>
+        </div>
+
+
+        <div class="coffee-card">
+            <span>🍫</span>
+            <h3>Mocha</h3>
+            <p>Coffee with chocolate flavor.</p>
+            <strong>₹160</strong>
+
+            <button onclick="selectCoffee('Mocha', 160)">
+                Choose
+            </button>
+        </div>
+
+
+        <div class="coffee-card">
+            <span>🧊</span>
+            <h3>Cold Coffee</h3>
+            <p>Chilled and refreshing coffee.</p>
+            <strong>₹140</strong>
+
+            <button onclick="selectCoffee('Cold Coffee', 140)">
+                Choose
+            </button>
+        </div>
+
+
+        <div class="coffee-card">
+            <span>🍫</span>
+            <h3>Chocolate Coffee</h3>
+            <p>Delicious chocolate coffee.</p>
+            <strong>₹170</strong>
+
+            <button onclick="selectCoffee('Chocolate Coffee', 170)">
+                Choose
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="order-section" id="order">
+
+    <h2>🛒 Place Your Order</h2>
+
+    <div class="order-box">
+
+        <label>Coffee</label>
+
+        <input
+            type="text"
+            id="coffeeName"
+            placeholder="Choose coffee"
+            readonly
+        >
+
+
+        <label>Price</label>
+
+        <input
+            type="text"
+            id="coffeePrice"
+            placeholder="₹0"
+            readonly
+        >
+
+
+        <label>Quantity</label>
+
+        <input
+            type="number"
+            id="quantity"
+            value="1"
+            min="1"
+            onchange="calculateTotal()"
+        >
+
+
+        <label>Seat / Table Number</label>
+
+        <input
+            type="text"
+            id="seatNumber"
+            placeholder="Example: Table 5"
+        >
+
+
+        <h3 class="total">
+            Total: ₹<span id="total">0</span>
+        </h3>
+
+
+        <button class="pay-btn" onclick="payNow()">
+            💳 Pay Now
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <h2>About Coffee Cafe</h2>
+
+    <p>
+        Welcome to Coffee Cafe. We serve fresh and delicious coffee
+        made with love. Enjoy your favorite coffee with friends and family.
+    </p>
+
+</section>
+
+
+<footer>
+    <p>© 2026 Coffee Cafe. All Rights Reserved.</p>
+</footer>
+
+
+<script src="home.js"></script>
+
+</body>
+</html>

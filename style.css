@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("coffee.avif") center/cover no-repeat;
+}
+
+
+.container{
+    position: relative;
+    width: 850px;
+    height: 750px;
+    background: #2a2a35;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #ff5b3f;
+    box-shadow: 0 0 30px rgba(255,91,63,.4);
+}
+
+.form-box{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    transition: .5s ease;
+}
+
+.form-box.login{
+    left: 0;
+}
+
+.form-box.register{
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container.active .form-box.login{
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container.active .form-box.register{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+form{
+    width: 80%;
+}
+
+form h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 13px 45px 13px 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #888;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-box input::placeholder{
+    color: #bbb;
+}
+
+.input-box i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    background: #ff5b3f;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.button:hover{
+    background: #ff784f;
+}
+
+form p{
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form a{
+    color: #ff5b3f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.toggle-box{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg,#ff5b3f,#d63c20);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .6s ease-in-out;
+}
+
+.container.active .toggle-box{
+    right: 50%;
+}
+
+.toggle-panel{
+    width: 80%;
+}
+
+.toggle-panel h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.toggle-panel p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Forgot Password */
+
+.forget-password{
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forget-password a{
+    color: #ff5b3f;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forget-password a:hover{
+    text-decoration: underline;
+}
+
+/* Social Login */
+
+.social-login{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-login p{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff5b3f;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.social-icons a:hover{
+    background: #ff5b3f;
+}
+
+.social-icons i{  
+    font-size: 20px;
+}
+
+/* Coffee Image */
+
+.coffee-img{
+    width: 350px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
