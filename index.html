@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,51 +25,42 @@
 
     <div class="form-box login">
 
-        <form action="login.php" method="POST">
+        <form id="loginForm">
 
             <h1>Login</h1>
 
             <div class="input-box">
                 <input
                     type="text"
-                    name="username"
+                    id="loginUsername"
                     placeholder="Username"
                     required>
 
                 <i class="bx bxs-user"></i>
             </div>
 
-
             <div class="input-box">
-
                 <input
                     type="password"
-                    name="password"
+                    id="loginPassword"
                     placeholder="Password"
                     required>
 
                 <i class="bx bxs-lock-alt"></i>
-
             </div>
-
 
             <div class="forget-password">
-
-                <a href="forgot-password.html">
+                <a href="#" id="forgotPassword">
                     Forgot Password?
                 </a>
-
             </div>
-
 
             <button type="submit" class="button">
                 Login
             </button>
 
-
             <p>
                 Don't have an account?
-
                 <a href="#" class="register-link">
                     Signup
                 </a>
@@ -85,38 +75,26 @@
 
                 <div class="social-icons">
 
-                    <!-- GOOGLE -->
-                    <a
-                        href="https://accounts.google.com/">
+                    <a href="https://accounts.google.com/" target="_blank">
                         <i class="bx bxl-google"></i>
                         Google
                     </a>
 
-
-                    <!-- GITHUB -->
-                    <a
-                        href="https://github.com/login">
+                    <a href="https://github.com/login" target="_blank">
                         <i class="bx bxl-github"></i>
                         GitHub
                     </a>
 
-
-                    <!-- FACEBOOK -->
-                    <a
-                        href="https://www.facebook.com/login/">
+                    <a href="https://www.facebook.com/login/" target="_blank">
                         <i class="bx bxl-facebook"></i>
                         Facebook
                     </a>
 
-
-                    <!-- EMAIL -->
                     <a href="mailto:">
                         <i class="bx bx-envelope"></i>
                         Email
                     </a>
 
-
-                    <!-- MOBILE -->
                     <a href="tel:">
                         <i class="bx bx-phone"></i>
                         Mobile
@@ -135,76 +113,59 @@
 
     <div class="form-box register">
 
-        <form action="register.php" method="POST">
+        <form id="registerForm">
 
             <h1>Register</h1>
 
-
             <div class="input-box">
-
                 <input
                     type="text"
-                    name="username"
+                    id="registerUsername"
                     placeholder="Username"
                     required>
 
                 <i class="bx bxs-user"></i>
-
             </div>
 
-
             <div class="input-box">
-
                 <input
                     type="email"
-                    name="email"
+                    id="registerEmail"
                     placeholder="Email"
                     required>
 
                 <i class="bx bx-envelope"></i>
-
             </div>
 
-
             <div class="input-box">
-
                 <input
                     type="password"
-                    name="password"
+                    id="registerPassword"
                     placeholder="Password"
                     required>
 
                 <i class="bx bxs-lock-alt"></i>
-
             </div>
 
-
             <div class="input-box">
-
                 <input
                     type="password"
-                    name="confirm_password"
+                    id="confirmPassword"
                     placeholder="Confirm Password"
                     required>
 
                 <i class="bx bxs-lock-alt"></i>
-
             </div>
-
 
             <button type="submit" class="button">
                 Register
             </button>
 
-
             <p>
-
                 Already have an account?
-
                 <a href="#" class="login-link">
                     Login
                 </a>
-
             </p>
 
 
@@ -216,12 +177,12 @@
 
                 <div class="social-icons">
 
-                    <a href="https://accounts.google.com/">
+                    <a href="https://accounts.google.com/" target="_blank">
                         <i class="bx bxl-google"></i>
                         Google
                     </a>
 
-                    <a href="https://github.com/login">
+                    <a href="https://github.com/login" target="_blank">
                         <i class="bx bxl-github"></i>
                         GitHub
                     </a>
@@ -257,7 +218,9 @@
                 Don't have an account?
             </p>
 
-            <button class="button register-link">
+            <button
+                type="button"
+                class="button register-link">
                 Signup
             </button>
 
@@ -272,7 +235,9 @@
                 Already have an account?
             </p>
 
-            <button class="button login-link">
+            <button
+                type="button"
+                class="button login-link">
                 Login
             </button>
 
